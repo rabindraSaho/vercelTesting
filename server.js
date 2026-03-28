@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(cors({
     origin : '*',
     // origin : (origin,callback)=>{
-    //     const allowedOrigins = [
+    //     const allowedOrigins = [app.use()
     //         'http://localhost:3000',
     //         'http://localhost:5173'
     //     ]
@@ -27,7 +27,7 @@ app.use(cors({
     allowedHeaders :['Content-Type','Authorization'],
     optionsSuccessStatus : 200
 }))
-
+app.use()
 app.use('/api',TestRouter)
 
 
