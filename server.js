@@ -27,7 +27,6 @@ app.use(cors({
     allowedHeaders :['Content-Type','Authorization'],
     optionsSuccessStatus : 200
 }))
-app.use()
 app.use('/api',TestRouter)
 
 
